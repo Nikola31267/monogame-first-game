@@ -12,6 +12,7 @@ public class Game1 : Game
     private Texture2D _squareTexture;
     private Vector2 _playerPosition;
     private Vector2 _playerSize;
+    private float _ground;
 
     public Game1()
     {
@@ -29,6 +30,7 @@ public class Game1 : Game
         // TODO: Add your initialization logic here
 
         _playerSize = new Vector2(40, 65);
+        _ground = 400;
 
         base.Initialize();
     }
@@ -58,8 +60,8 @@ public class Game1 : Game
             _playerPosition.X++;
         }
 
-        if (_playerPosition.Y < 300)
-            ++_playerPosition.Y;
+        if (_playerPosition.Y < _ground)
+            _playerPosition.Y++;
 
         base.Update(gameTime);
     }
