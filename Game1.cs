@@ -46,14 +46,16 @@ public class Game1 : Game
 
     protected override void Update(GameTime gameTime)
     {
-        if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+        if (
+            GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed
+            || Keyboard.GetState().IsKeyDown(Keys.Escape)
+        )
             Exit();
 
         if (Keyboard.GetState().IsKeyDown(Keys.A))
         {
             _playerPosition.X--;
         }
-
 
         if (Keyboard.GetState().IsKeyDown(Keys.D))
         {
@@ -72,12 +74,24 @@ public class Game1 : Game
 
         _spriteBatch.Begin();
 
-        _spriteBatch.Draw(_squareTexture, new Rectangle((int)_playerPosition.X, (int)_playerPosition.Y, (int)_playerSize.X, (int)_playerSize.Y), Color.Beige);
+        _spriteBatch.Draw(
+            _squareTexture,
+            new Rectangle(
+                (int)_playerPosition.X,
+                (int)_playerPosition.Y,
+                (int)_playerSize.X,
+                (int)_playerSize.Y
+            ),
+            Color.Beige
+        );
 
-        _spriteBatch.Draw(_squareTexture, new Rectangle(0, (int)_ground + 5, 100, 100));
+        _spriteBatch.Draw(
+            _squareTexture,
+            new Rectangle(0, (int)_ground + 5, 100, 100),
+            Color.Green
+        );
 
         _spriteBatch.End();
-
 
         base.Draw(gameTime);
     }

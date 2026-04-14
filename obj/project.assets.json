@@ -300,11 +300,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/nikola/Developer/first-game/first-game.csproj",
+      "projectUniqueName": "/home/nikola/Projects/first-game/first-game.csproj",
       "projectName": "first-game",
-      "projectPath": "/home/nikola/Developer/first-game/first-game.csproj",
+      "projectPath": "/home/nikola/Projects/first-game/first-game.csproj",
       "packagesPath": "/home/nikola/.nuget/packages/",
-      "outputPath": "/home/nikola/Developer/first-game/obj/",
+      "outputPath": "/home/nikola/Projects/first-game/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/nikola/.nuget/NuGet/NuGet.Config"
@@ -363,7 +363,7 @@
             "version": "[9.0.14, 9.0.14]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "name": "Microsoft.NETCore.App.Host.linux-arm64",
             "version": "[9.0.14, 9.0.14]"
           },
           {
@@ -376,7 +376,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/nikola/.dotnet/sdk/10.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
