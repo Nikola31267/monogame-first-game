@@ -74,6 +74,8 @@ public class Game1 : Game
 
         _spriteBatch.Draw(_squareTexture, new Rectangle((int)_playerPosition.X, (int)_playerPosition.Y, (int)_playerSize.X, (int)_playerSize.Y), Color.Beige);
 
+        _spriteBatch.Draw(_squareTexture, new Rectangle(0, (int)_ground + 5, 100, 100));
+
         _spriteBatch.End();
 
 
