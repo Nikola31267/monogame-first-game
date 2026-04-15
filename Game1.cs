@@ -88,7 +88,7 @@ public class Game1 : Game
         _spriteBatch.Draw(
             _squareTexture,
             new Rectangle(0, (int)_ground + 5, 100, 100),
-            Color.Green
+            Color.DarkRed
         );
 
         _spriteBatch.End();
