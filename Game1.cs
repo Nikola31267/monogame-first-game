@@ -62,8 +62,10 @@ public class Game1 : Game
             _playerPosition.X++;
         }
 
-        if (_playerPosition.Y < _ground)
+        if (_playerPosition.Y < _ground - _playerSize.Y)
+        {
             _playerPosition.Y++;
+        }
 
         base.Update(gameTime);
     }
