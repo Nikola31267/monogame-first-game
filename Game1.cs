@@ -14,6 +14,8 @@ public class Game1 : Game
     private Vector2 _playerSize;
     private float _ground;
 
+    private Player _player;
+
     public Game1()
     {
         _graphics = new GraphicsDeviceManager(this);
@@ -23,6 +25,8 @@ public class Game1 : Game
         _graphics.PreferredBackBufferWidth = 1280;
         _graphics.PreferredBackBufferHeight = 800;
         _graphics.ApplyChanges();
+
+        _player = new Player();
     }
 
     protected override void Initialize()

@@ -7,7 +7,11 @@ public class Player
     public Vector2 Position;
     public Vector2 Size;
 
-    public Player() { }
+    public Player(Vector2 position, Vector2 size)
+    {
+        Position = position;
+        Size = size;
+    }
 
     public void Draw() { }
 }
